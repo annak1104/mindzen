@@ -161,7 +161,7 @@ const QuizSection = () => {
                   transition={{ duration: 0.5 }}
                   className="font-poppins font-bold text-4xl md:text-5xl mb-6 text-center text-white"
                 >
-                  How Stressed Are You? Take This 60-Second Quiz!
+                  How Stressed Are You? <br/> Take This 60-Second Quiz!
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}

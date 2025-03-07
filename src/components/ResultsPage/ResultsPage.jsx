@@ -11,12 +11,20 @@ const ResultsPage = ({ answers }) => {
     );
   }
 
-  const stressLevel = answers[0].title;
+  const stressMapping = {
+    "Rarely": "Low",
+    "Sometimes": "Moderate",
+    "Often": "High",
+    "Almost always": "Extreme",
+  };
+
+  const stressLevel = answers[0]?.title;
+  const stressCategory = stressMapping[stressLevel] || "Unknown";
 
   return (
     <div className="bg-gray-100 flex flex-col items-center py-10 px-4">
       <h1 className="text-3xl font-bold text-gray-800 text-center mb-6">
-        Your Stress Level: {stressLevel} – Here’s Your Personalized Plan!
+        Your Stress Level: <br/> {stressCategory} – Here’s Your Personalized Plan!
       </h1>
 
       <div className="max-w-lg w-full flex flex-col gap-6">
