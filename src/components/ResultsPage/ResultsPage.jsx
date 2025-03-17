@@ -12,9 +12,9 @@ const ResultsPage = ({ answers }) => {
   }
 
   const stressMapping = {
-    "Rarely": "Low",
-    "Sometimes": "Moderate",
-    "Often": "High",
+    Rarely: "Low",
+    Sometimes: "Moderate",
+    Often: "High",
     "Almost always": "Extreme",
   };
 
@@ -24,7 +24,8 @@ const ResultsPage = ({ answers }) => {
   return (
     <div className="bg-gray-100 flex flex-col items-center py-10 px-4">
       <h1 className="text-3xl font-bold text-gray-800 text-center mb-6">
-        Your Stress Level: <br/> {stressCategory} – Here’s Your Personalized Plan!
+        Your Stress Level: <br /> {stressCategory} – Here’s Your Personalized
+        Plan!
       </h1>
 
       <div className="max-w-lg w-full flex flex-col gap-6">
@@ -49,7 +50,7 @@ const ResultsPage = ({ answers }) => {
 
       {/* CTA Button */}
       <button className="mt-8 bg-teal-600 text-white font-bold text-lg py-4 px-4 rounded-full hover:bg-teal-700 transition active:scale-95">
-        Find Peace on Telegram
+        Find peace with MindZen
       </button>
 
       {/* Telegram Info */}
